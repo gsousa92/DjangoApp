@@ -1,0 +1,11 @@
+<title>Add</title>
+
+<h1>Add User</h1>
+
+<form action="{% url 'add' %}" method="post"> {% csrf_token %}
+
+<p><label for="name">Name:</label><input type="text" name="name"></label></p>
+<p><label for="email">Email:</label><input type="email" name="email"> (email@example.com)</label></p>
+<input type="submit" value="Submit" />
+</form>
+
